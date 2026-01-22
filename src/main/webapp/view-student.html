@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Students</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background: green;
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        .btn {
+            padding: 5px 10px;
+            background: blue;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+            margin: 2px;
+        }
+        
+        .btn-red {
+            background: red;
+        }
+        
+        .btn-green {
+            background: green;
+        }
+        
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>🎓 All Students List</h2>
+    
+    <div class="center">
+        <a href="register.html" class="btn btn-green">➕ Add New Student</a>
+        <br><br>
+    </div>
+    
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Roll No</th>
+            <th>Marks</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td colspan="5" class="center">
+                <a href="ViewStudentsServlet">Click here to load students</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

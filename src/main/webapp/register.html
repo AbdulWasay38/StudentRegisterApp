@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        
+        .form-box {
+            background: white;
+            width: 400px;
+            padding: 30px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+        
+        h2 {
+            text-align: center;
+            color: green;
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        button {
+            background: green;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .link a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h2>📝 Student Registration</h2>
+        
+        <form action="RegisterServlet" method="post">
+            <input type="text" name="name" placeholder="Student Name" required>
+            
+            <input type="text" name="roll_no" placeholder="Roll Number" required>
+            
+            <input type="number" name="marks" placeholder="Marks (0-100)" min="0" max="100" required>
+            
+            <button type="submit">✅ Register Student</button>
+        </form>
+        
+        <div class="link">
+            <p><a href="view-students.html">👀 View All Students</a></p>
+        </div>
+    </div>
+</body>
+</html>
